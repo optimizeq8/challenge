@@ -2,7 +2,7 @@
 
 ## Introduction
 
-At OptimizeApp we spend all day figuring out how to get customers ads online as quickly and easily as possible. As a software engineer, you have to build software to streamline our advertising placement functions. Your task here is to decide whether uploaded media is suitable for an advertisement. 
+At OptimizeApp we spend all day figuring out how to get customers ads online as quickly and easily as possible. As a software engineer, you have to build software to streamline our advertising placement functions. Your task here is to decide whether uploaded media is suitable for an advertisement.
 
 ## Requirements
 
@@ -16,7 +16,7 @@ At OptimizeApp we spend all day figuring out how to get customers ads online as 
 
 1. Must be a RESTful HTTP API listening to port `8080` (or you can use another port instead and describe in the README)
 
-2. Our providers have a number of restrictions for uploaded media that must be checked on upload. 
+2. Our providers have a number of restrictions for uploaded media that must be checked on upload.
 
     | Provider | Image Type | Restrictions                                     | Notes                                                      |
     | -------- | ---------- | ------------------------------------------------ | ---------------------------------------------------------- |
@@ -26,22 +26,22 @@ At OptimizeApp we spend all day figuring out how to get customers ads online as 
     | Snapchat | .jpg, .gif | Must be in aspect ratio 16:9 <br />< 5mb in size |                                                            |
     |          | .mp4, .mov | < 50mb in size<br />< 5 minutes long             | Must extract a preview image from the middle of the video. |
 
-    When media is uploaded it must be checked, processed and stored. Accurate error messages must be sent when an upload fails. 
+    When media is uploaded it must be checked, processed and stored. Accurate error messages must be sent when an upload fails.
 
 3. The API must implement 3 endpoints as described below
-    - One endpoint to list providers. Providers are listed above and their rules should be provided as a description. 
+    - One endpoint to list providers. Providers are listed above and their rules should be provided as a description.
     - One endpoint to upload images
         - To create a image you must supply `name`, `provider`, `image_file`
         - The API responds with an object of the image
-        - The provider should be an id from the provider table. 
+        - The provider should be an id from the provider table.
 
     -	One endpoint to upload videos
     	-	To create a video you must supply `name`, `provider`, `video_file`
     -	The API responds with an object of the video
-    	-	The provider should be an id from the provider table. 
-    	
+    	-	The provider should be an id from the provider table.
+
     - One endpoint to list uploaded files
-      - This should list all uploaded files showing the most recent first. This endpoint should be paginated. 
+      - This should list all uploaded files showing the most recent first. This endpoint should be paginated.
 
 4. The request input should be validated before processing. The server should return proper error responses in case validation fails.
 
@@ -49,7 +49,7 @@ At OptimizeApp we spend all day figuring out how to get customers ads online as 
 
 6. All responses must be in json format for success and failure responses.
 
-7. Relations between models can be made however they make sense. If extra tables are needed please make them. 
+7. Relations between models can be made however they make sense. If extra tables are needed please make them.
 
 8. Tables should have migrations
 
@@ -59,4 +59,4 @@ At OptimizeApp we spend all day figuring out how to get customers ads online as 
 3. Add filters for media type, upload date
 
 
-Questions? We love to answer: techchallenge@optimizeapp.com
+Questions? We love to answer: admin@optimizeapp.com
